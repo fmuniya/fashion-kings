@@ -5,6 +5,7 @@ import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import { CartContext } from "../../context/cart.context";
 import { CustomerContext } from "../../context/customer.contexts";
+import { ReactComponent as CrownLogo } from '../../assets/crown.svg';
 import "./navigation.styles.scss";
 
 
@@ -21,7 +22,8 @@ const Navigation = () => {
             <div className="navigation">
 
                 <Link className="logo-container" to={'/'}>
-                    Logo
+                    <CrownLogo className="logo"/>
+                    <span className="site-name">Fashion Kings</span>
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to={'Shop'}>Shop</Link>
